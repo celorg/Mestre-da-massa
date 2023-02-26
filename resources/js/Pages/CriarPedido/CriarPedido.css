@@ -1,0 +1,95 @@
+.criarpedido{
+    text-align: left;
+}
+
+.criarpedido h2{
+    text-align: center;
+}
+.criarpedido article{
+    margin: 2rem 0;
+}
+.div-fazerPedido{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.div-fazerPedido p{
+    padding: 10px 0 0 10px;
+    font-weight: 500;
+}
+.criarpedido .div-fazerPedido button {
+    display: flex;
+    background-color: #bfd159;
+    border: none;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.lista-items{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+.lista-items li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3e3b38;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    width: 90%;
+    margin: .5rem auto;
+}
+.lista-items li div{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.lista-items .div-nome p{
+    padding-top: 6px;
+}
+.lista-items .div-input{
+    display: flex;
+    height: 20px;
+    gap: 5px;
+    margin: 10px 0;
+}
+.lista-items .div-qntd p{
+    text-transform: uppercase;
+    margin-left: -10px;
+    font-weight: 500;
+}
+.lista-items .div-input button{
+    padding: 0 15px;
+    background-color: #bfd159;
+    border-bottom: 1px solid #3e3b38;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.lista-items .div-input input{
+    text-align: center;
+    border: none;
+    /* border-bottom: 1px solid #3e3b38; */
+}
+.lista-items .div-input button:hover{
+    background-color: #3d7e18;
+}
+
+@media screen and (min-width: 768px){
+    .lista-items{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .lista-items .div-nome{
+        padding-left: 10px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lista-items{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    
+}

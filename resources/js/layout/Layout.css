@@ -1,0 +1,10 @@
+main{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fffcf9;  
+    padding: 0;
+}
+.container{
+    padding: 0 1rem;
+    text-align: center;
+    min-height: 80vh;
+}

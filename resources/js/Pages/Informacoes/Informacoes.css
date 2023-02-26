@@ -1,0 +1,17 @@
+.div-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 0.5rem;
+}
+.div-info label span{
+    font-weight: bolder;
+}
+
+.div-sobre{
+    text-align: left;
+    padding: 1rem 0.5rem;
+}
+.div-sobre h6{
+    font-weight: bolder;
+}

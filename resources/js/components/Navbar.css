@@ -1,0 +1,133 @@
+.nav-bar{
+    /* height: 100px; */
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fffcf9;
+}
+.img-desktop{
+    display: none;
+}
+.logo img{
+    width: 140px;
+}
+.nav-bar ul{
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    transition: all .5s;
+    width: 80%;
+    height: 100%;
+    background-color: #bfd159;
+    z-index: 1;
+    padding: 1rem;
+    align-items: center;
+}
+.nav-bar ul li{
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+.nav-bar ul a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    /* font-weight: bolder; */
+    border: 2px solid transparent;
+    transition: 0.5s;
+    font-size: 25px;
+    white-space: nowrap;
+    border-bottom: #bfd159 2px solid;
+}
+.nav-bar ul a:hover{
+    border-bottom: #fff 2px solid;
+    color: #fff;
+}
+.nav-bar ul a:visited ~ ul{
+    left: -100%;
+}
+.checkbtn{
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+.carrinho p{
+    color: #000;
+}
+.iconCart{
+    text-decoration: none;
+    color: #bfd159;
+    font-size: 40px;
+    padding: 5px;
+    border-radius: 5px;
+} 
+.iconCart:hover{
+    border: 1px solid #bfd159;
+}
+
+.ativo{
+    border-bottom: #fff 1px solid;
+}
+
+@media screen and (min-width: 992px){
+    .nav-bar{
+        padding: 0 1rem;
+    }
+    .img-desktop{
+        display: flex;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        gap: 1rem;
+        background-color: #fffcf9;
+    }
+    .nav-bar ul li{
+        display: inline-block;
+        flex-wrap: nowrap;
+        line-height: 0;
+    }
+    .nav-bar ul a{
+        color: #3e3b38;
+        font-size: 15px;
+        border: #fffcf9 1px solid;
+        transition: .5s;
+        padding: 10px;
+        font-weight: 400;
+    }
+    .nav-bar ul a:hover{
+        color: #bfd159;
+        border-bottom: #bfd159 1px solid;
+    }
+    .checkbtn{
+        display: none;
+    }
+    .ativo{
+        border-bottom: #bfd159 1px solid;
+    }
+
+}
